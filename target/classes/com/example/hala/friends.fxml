@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="352.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hala.FriendsController">
+   <center>
+      <ScrollPane prefHeight="305.0" prefWidth="307.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="friendsVB" prefHeight="309.0" prefWidth="331.0" />
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="83.0" prefWidth="352.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="friendsL" alignment="CENTER" layoutX="78.0" layoutY="9.0" onMouseClicked="#onFriendsLabelClick" prefHeight="17.0" prefWidth="193.0" text="Friends" textAlignment="CENTER" textFill="#8572f2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="usersL" alignment="CENTER" layoutX="81.0" layoutY="54.0" onMouseClicked="#onUsersLabelClick" prefHeight="17.0" prefWidth="187.0" text="People you may know" textFill="#d3289d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="friendsRL" alignment="CENTER" layoutX="78.0" layoutY="32.0" onMouseClicked="#onFriendRequestsLabelClick" prefHeight="17.0" prefWidth="194.0" text="Friend Requests" textFill="#e884d7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="messageL" layoutX="9.0" layoutY="5.0" prefHeight="17.0" prefWidth="317.0">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <VBox prefHeight="313.0" prefWidth="7.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="313.0" prefWidth="9.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
